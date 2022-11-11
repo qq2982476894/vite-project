@@ -1,5 +1,5 @@
 <script setup>
-const size = ref(0)
+const size = ref(60)
 </script>
 
 
@@ -46,8 +46,8 @@ const size = ref(0)
   will-change: filter;
 }
 .logo:hover {
-  filter: drop-shadow(2px 10px 15px #646cffaa);
-  transition: 1s;
+  filter: drop-shadow(0 0 2em #ef4646aa);
+  transition: .2s;
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
