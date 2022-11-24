@@ -18,7 +18,7 @@ const size = ref(60)
 
     <a-layout-header class="header">
         <a-space :size="size">
-            <img src="@/assets/images/音乐.svg" class="logo" alt="">
+            <router-link :to="{name:'bigScreen'}"><img src="@/assets/images/音乐.svg" class="logo" alt=""></router-link>
             <img src="@/assets/images/学习.svg" class="logo" alt="">
             <img src="@/assets/images/度假.svg" class="logo" alt="">
             <img src="@/assets/images/浪漫.svg" class="logo" alt="">

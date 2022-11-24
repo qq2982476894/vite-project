@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from "vue-router"
 const routes = [
     { path: '/hello', component: () => import('@/components/HelloWorld.vue') },
     { path: '/', component: () => import('@/views/Home.vue') },
+    { path: '/bigScreen', name: 'bigScreen', component: () => import('@/views/bigScreen/bigScreen.vue') },
+
 ]
 
 const router = createRouter({
