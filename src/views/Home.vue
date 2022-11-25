@@ -4,7 +4,7 @@ import api from '@/api'
 api.getData().then(res=>{
     console.log('在请求了',res);
 })
-const size = ref(60)
+const size = ref(37)
 
 </script>
 
