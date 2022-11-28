@@ -1,24 +1,59 @@
 .page{
     width: 1920px;
     height: 1080px;
+    padding: 20px;
     font-size: 20px;
     box-sizing: border-box;
     position: relative;
     background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #040607, #101a1e, #092835);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #040607, #101a1e, #092835); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+.header{
+    height: 100px;
+    margin-bottom: 15px;
+    background-color: rgba(52, 242, 245, 0.1);
 }
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    .s-box{
-        background-color: rgba(255,255,255,.1);
-        width: 30%;
-        height: 600px;
-        margin: 0 1%;
+    flex: 1;
+    justify-content: space-between;
+    .left-box{
+        width: 400px;
+        justify-content: space-between;
+    }
+    .right-box{
+        width: 400px;
+        justify-content: space-between;
+    }
+    .mid-box{
+        width: 1000px;
+        justify-content: space-between;
+    }
+    .base_card{
+        border: 1px solid rgba(52, 242, 245, 0.1);
+        width:100%;
+        height: 300px;
+        .flex_column();
+        box-sizing: border-box;
+        .title{
+            height: 26px;
+            
+        }
+        .chart-box{
+            flex: 1;
+            padding: 10px;
+        }
     }
 }
 
